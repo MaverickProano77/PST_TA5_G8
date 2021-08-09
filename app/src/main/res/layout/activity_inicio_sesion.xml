@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".InicioSesion">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
@@ -20,36 +20,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            app:srcCompat="@drawable/catalogo" />
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="60dp" />
+            android:layout_height="55dp" />
 
-        <ImageView
-            android:id="@+id/imageView"
+        <EditText
+            android:id="@+id/editTextTextPersonName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/catalogo" />
+            android:layout_height="90dp"
+            android:ems="10"
+            android:hint="@string/usuario"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:ems="10"
+            android:hint="@string/contrasena"
+            android:inputType="textPersonName" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="30dp" />
 
-        <TextView
-            android:id="@+id/textView"
+        <Button
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#009688"
-            android:text="@string/tituloapp"
-            android:textAlignment="center"
-            android:textColor="#FF5722"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:text="@string/ingrese"
+            app:backgroundTint="#9A3131" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Iniciar"
-            android:text="@string/comenzar" />
+            android:text="@string/registrese"
+            app:backgroundTint="#4CAF50" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
