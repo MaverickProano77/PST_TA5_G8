@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Logo">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,18 +38,11 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#009688"
+            android:background="#03A9F4"
             android:text="@string/tituloapp"
             android:textAlignment="center"
             android:textColor="#FF5722"
             android:textSize="34sp"
             android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="Iniciar"
-            android:text="@string/comenzar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
