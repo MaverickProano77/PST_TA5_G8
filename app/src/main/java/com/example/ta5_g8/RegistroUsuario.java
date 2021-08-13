@@ -32,6 +32,12 @@ public class RegistroUsuario extends AppCompatActivity {
         String usu = txtUsuario.getText().toString();
         String contra = txtContrasena.getText().toString();
         bd.execSQL("insert into usuario (user, contrasena, nombres, apellidos, correo, celular) values ('"+usu+"','"+contra+"','"+nom+"','"+ape+"','"+cor+"','"+cel+"')");
+        txtNombres.setText("");
+        txtApellidos.setText("");
+        txtCorreo.setText("");
+        txtCelular.setText("");
+        txtUsuario.setText("");
+        txtContrasena.setText("");
         Toast.makeText(this, "Se cargaron sus datos",
                 Toast.LENGTH_SHORT).show();
     }

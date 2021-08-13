@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TA5_G8">
-        <activity android:name=".RegistroUsuario"></activity>
+        <activity android:name=".Perfil"></activity>
+        <activity android:name=".RegistroLibros" />
+        <activity android:name=".RegistroUsuario" />
         <activity android:name=".InicioSesion" />
         <activity android:name=".Logo" />
         <activity android:name=".MainActivity">
